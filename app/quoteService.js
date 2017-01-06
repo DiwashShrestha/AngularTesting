@@ -5,7 +5,7 @@ angular.module('quote')
 
         return {
             getQuote: function () {
-                $http.jsonp(url, {jsonpCallbackParam: 'jsonp'}); 
+                return $http.jsonp(url, {jsonpCallbackParam: 'jsonp'}); 
         }
     }
 }]);

@@ -15,4 +15,5 @@ describe(' In quote service ',function(){
 		quoteService.getQuote();
 		$httpBackend.flush();
 	});
+    
 });
