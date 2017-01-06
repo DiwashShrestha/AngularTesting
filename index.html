@@ -6,11 +6,19 @@
     <body ng-app="quote">
 
         <div ng-controller="quoteController">
+            <h1><span id="quoteTitle">Quote of the Day</span></h1>
+            <button ng-click="getQuote()">New Quote</button>
+            <hr>
+
+            <div>
+                <h2>"<span id="quoteText" ng-bind="quote.quoteText"></span>"</h2>
+                <h3>- <span id="quoteAuthor" ng-bind="quote.quoteAuthor"></span></h3>
+            </div>
         </div>
 
-    <script src="node_modules/angular/angular.js"></script>
-    <script src="app/quote.js"></script>
-    <script src="app/quoteService.js"></script>
-    <script src="app/quoteController.js"></script>
+        <script src="node_modules/angular/angular.js"></script>
+        <script src="app/quote.js"></script>
+        <script src="app/quoteService.js"></script>
+        <script src="app/quoteController.js"></script>
     </body>
 </html>
