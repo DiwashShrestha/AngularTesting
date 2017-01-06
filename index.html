@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>Quote</title>
+        <link type="text/css" rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     </head>
     <body ng-app="quote">
 
-        <div ng-controller="quoteController">
-            <h1><span id="quoteTitle">Quote of the Day</span></h1>
-            <button ng-click="getQuote()">New Quote</button>
+        <div ng-controller="quoteController" class="container">
+            <h1>
+                <span id="quoteTitle">Quote of the Day</span>
+                <button ng-click="getQuote()" class="btn btn-default pull-right">New Quote</button>
+            </h1>
             <hr>
 
             <div>
                 <h2>"<span id="quoteText" ng-bind="quote.quoteText"></span>"</h2>
                 <h3>- <span id="quoteAuthor" ng-bind="quote.quoteAuthor"></span></h3>
             </div>
+
+            <hr>
         </div>
 
         <script src="node_modules/angular/angular.js"></script>
